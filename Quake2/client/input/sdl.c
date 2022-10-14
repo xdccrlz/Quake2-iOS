@@ -207,9 +207,9 @@ IN_TranslateSDLtoQ2Key(unsigned int keysym)
 		case SDLK_UP:
 			key = K_UPARROW;
 			break;
-		case SDLK_ESCAPE:
+/*		case SDLK_ESCAPE:
 			key = K_ESCAPE;
-			break;
+			break;            */
 		case SDLK_KP_ENTER:
 			key = K_KP_ENTER;
 			break;
@@ -472,7 +472,8 @@ IN_Update(void)
 				switch (event.button.button)
 				{
 					case SDL_BUTTON_LEFT:
-						key = K_MOUSE1;
+//						key = K_MOUSE1;
+						key = K_ESCAPE;
 						break;
 					case SDL_BUTTON_MIDDLE:
 						key = K_MOUSE3;
