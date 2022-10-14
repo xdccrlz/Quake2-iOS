@@ -50,10 +50,10 @@
 #ifdef _WIN32
  #define CFGDIR "YamagiQ2"
 #else
- #ifdef IOS
-  #define CFGDIR ""
+ #ifdef IPHONEOS
+  #define CFGDIR "Documents"
  #else
- #define CFGDIR ".yq2"
+ #define CFGDIR "Library/Caches"
  #endif
 #endif
 
